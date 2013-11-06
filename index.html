@@ -25,10 +25,10 @@
                 <div class="form-group">
                     <label class="col-lg-2 control-label" for="first-name">Name</label>
                     <div class="col-lg-5">
-                        <input type="text" class="form-control" name="first-name" id="first-name" placeholder="first name">
+                        <input type="text" class="form-control" name="first-name" id="first-name" placeholder="first name" required>
                     </div>
                     <div class="col-lg-5">
-                        <input type="text" class="form-control" name="last-name" id="last-name" placeholder="last name">
+                        <input type="text" class="form-control" name="last-name" id="last-name" placeholder="last name" required>
                     </div>
                 </div>
                 <div class="form-group">
@@ -63,7 +63,7 @@
                 <div class="form-group">
                     <label class="col-lg-2 control-label" for="email">Email</label>
                     <div class="col-lg-10">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="email address">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="email address" required>
                     </div>
                 </div>
 
@@ -116,30 +116,26 @@
                     </div>
                 </div>
 
+                <div class="modal fade cancel-signup-modal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Abandon Signup?</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>Are you sure you don't want to signup to receive useless marketing spam for the rest of your life? I mean, this is a rare opportunity here. You'd be a fool not to sign up!</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">No, Go Back to Signup Form</button>
+                                <button type="button" class="btn btn-primary btn-abandon">Yes, Get Me Out of Here!</button>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+
             </form>
 
         </div> <!-- .container -->
-
-        <!-- Modal dialog shown when 'No Thanks!' button is pressed -->
-        <!-- this is an optional step for this lab, so if you are not doing
-        this optional step, just ignore this portion of the page. It won't be 
-        visible to the user unless you write the code to show it --> 
-        <div class="modal fade cancel-signup-modal">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Abandon Signup?</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>Are you sure you don't want to signup to receive useless marketing spam for the rest of your life? I mean, this is a rare opportunity here. You'd be a fool not to sign up!</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">No, Go Back to Signup Form</button>
-                        <button type="button" class="btn btn-primary btn-abandon">Yes, Get Me Out of Here!</button>
-                    </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
 
         <!-- hot link to minified jQuery library, version 2.0.3 -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
